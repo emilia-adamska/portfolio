@@ -1,0 +1,30 @@
+* {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+p {
+    margin: 0;
+    line-height: 1.2em;
+}
+.flex {
+    display: flex;
+    &-ji-c {
+        justify-items: center;
+    }
+    &-jc-c {
+        justify-content: center;
+    }
+    &-fd-r {
+        flex-direction: row;
+    }
+    &-fd-c {
+        flex-direction: column;
+    }
+    &-jc-se {
+        justify-content:space-evenly;
+    }
+}
