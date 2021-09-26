@@ -11,7 +11,7 @@ body {
 
 p {
   margin: 0;
-  line-height: 1.2em;
+  line-height: 1.3em;
 }
 
 .flex {
@@ -54,9 +54,13 @@ header {
   width: 100%;
   height: 800px;
   margin-top: 130px;
+  padding: 0 120px 0 120px;
 }
 
 header img {
+  position: relative;
+  -webkit-transform: rotate(-4deg);
+          transform: rotate(-4deg);
   width: 450px;
   height: 450px;
   border-radius: 50%;
@@ -65,18 +69,46 @@ header img {
           box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
+header .square {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 350px;
+  left: 130px;
+  border: 10px solid #ffe81b;
+  -webkit-transform: rotate(-4deg);
+          transform: rotate(-4deg);
+  z-index: -1;
+}
+
+header .triangle {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  left: 580px;
+  top: 50px;
+  background-image: url("/images/triangle.png");
+  background-repeat: no-repeat;
+  z-index: -1;
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+}
+
 header div {
   font-family: 'Roboto Mono', monospace;
   width: 700px;
-  color: #ffe570;
+  color: #ffe81b;
 }
 
 header div img {
   width: 100%;
   height: auto;
   border: 0;
+  border-radius: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
 }
 
 header div div {
@@ -89,6 +121,17 @@ header div div {
 
 header div p {
   padding: 10px;
-  font-size: 1.25em;
+  font-size: 1.3em;
+}
+
+header div .circle {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  border: 10px solid #ffe81b;
+  border-radius: 50%;
+  right: -150px;
+  top: 30px;
+  z-index: -1;
 }
 /*# sourceMappingURL=style.css.map */
